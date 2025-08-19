@@ -15,5 +15,8 @@ class Solution:
             triangle.append([x + y for x, y in zip([0] + triangle[-1], triangle[-1] + [0])])
         return triangle
 ```
-g
+## WEEK 1:   (Med)
+```
+
+```
 ### Ipoindi le ika lev
