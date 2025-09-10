@@ -1,10 +1,9 @@
 # LEET-CODES-ODD25
-Bagupadipondi.....Enjoyy Fandagawww
 
 # LEET-CODE-SOLS:
 *EASY & Med QUESTIONS*
 
-### 1st  two lines (Predefined Function) tym wa
+### 1st  two lines (Predefined Function) 
 
 ## WEEK 1:  Pascal's Triangle (Easy)
 
@@ -27,3 +26,4 @@ class Solution:
 
 ```
 ### Ipoindi le ika lev
+Bagupadipondi.....Enjoyy Fandagawww
