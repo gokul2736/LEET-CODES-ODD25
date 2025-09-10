@@ -1,6 +1,5 @@
-# LEET-CODES-ODD25
+# LEET-CODES-ODD25 SOLS:
 
-# LEET-CODE-SOLS:
 *EASY & Med QUESTIONS*
 
 ### 1st  two lines (Predefined Function) 
@@ -25,5 +24,20 @@ class Solution:
         return sum(nums) - min(nums) * len(nums)
 
 ```
+
+
+## WEEK 2: Happy Number (Easy)
+
+```python3
+class Solution:
+    def isHappy(self, n: int) -> bool:
+        seen=set()
+        while n!=1 and n not in seen:
+            seen.add(n)
+            n=sum(int(c)**2 for c in str(n))
+        return n==1
+```
+
+
 ### Ipoindi le ika lev
 Bagupadipondi.....Enjoyy Fandagawww
