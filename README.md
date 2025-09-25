@@ -4,7 +4,7 @@
 
 ### 1st  two lines (Predefined Function) 
 
-## WEEK 1:  Pascal's Triangle (Easy)
+## WEEK 1: (Easy)
 
 ```python
 class Solution:
@@ -14,9 +14,9 @@ class Solution:
             triangle.append([x + y for x, y in zip([0] + triangle[-1], triangle[-1] + [0])])
         return triangle
 ```
-## WEEK 1:   (Med) 
+## WEEK 1: (Med) 
 
-```python3
+```python
 from typing import List
 
 class Solution:
@@ -26,9 +26,9 @@ class Solution:
 ```
 
 
-## WEEK 2: Happy Number (Easy)
+## WEEK 2: (Easy)
 
-```python3
+```python
 class Solution:
     def isHappy(self, n: int) -> bool:
         seen=set()
@@ -38,6 +38,47 @@ class Solution:
         return n==1
 ```
 
+
+## WEEK 2: (Med)
+
+```python
+
+```
+
+## WEEK 3: (Easy) 
+
+```python
+
+```
+
+## WEEK 3: (Med) 
+
+```python
+
+```
+
+## WEEK 4: (EASY)
+
+```python
+
+```
+
+## WEEK 4: (Med)
+
+```python
+
+```
+## WEEK 5: (EASY)
+
+```python
+
+```
+
+## WEEK 5: (Med)
+
+```python
+
+```
 
 ### Ipoindi le ika lev
 Bagupadipondi.....Enjoyy Fandagawww
