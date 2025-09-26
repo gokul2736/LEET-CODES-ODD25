@@ -83,7 +83,6 @@ class Solution {
         Arrays.sort(nums);
 
         for (int i = 0; i < nums.length - 2; i++) {
-            // Skip duplicates for the first element
             if (i > 0 && nums[i] == nums[i - 1]) {
                 continue;
             }
@@ -100,7 +99,6 @@ class Solution {
                 } else {
                     res.add(Arrays.asList(nums[i], nums[l], nums[r]));
                     l++;
-                    // Skip duplicates for the second element
                     while (l < r && nums[l] == nums[l - 1]) {
                         l++;
                     }
