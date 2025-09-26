@@ -72,7 +72,7 @@ class Solution:
         return res
 ```
 
-<h2 align="center">In java</h2>
+<h2 align="center">In java ↓</h2>
 
 ```java
 import java.util.ArrayList;
@@ -115,13 +115,48 @@ class Solution {
 ## WEEK 3: (Easy) 
 
 ```python
+from typing import List
 
+class Solution:
+    def fizzBuzz(self, n: int) -> List[str]:
+        answer = []
+        for i in range(1, n + 1):
+            if i % 15 == 0:
+                answer.append("FizzBuzz")
+            elif i % 3 == 0:
+                answer.append("Fizz")
+            elif i % 5 == 0:
+                answer.append("Buzz")
+            else:
+                answer.append(str(i))
+                
+        return answer
 ```
 
 ## WEEK 3: (Med) 
 
 ```python
+from typing import List
 
+class Solution:
+    def suggestedProducts(self, products: List[str], searchWord: str) -> List[List[str]]:
+        products.sort()
+        
+        result = []
+        left, right = 0, len(products) - 1
+        
+        for i in range(len(searchWord)):
+            prefix = searchWord[:i+1]
+            
+            while left <= right and not products[left].startswith(prefix):
+                left += 1
+            
+            while left <= right and not products[right].startswith(prefix):
+                right -= 1
+            
+            result.append(products[left:min(left + 3, right + 1)])
+            
+        return result
 ```
 
 ## WEEK 4: (EASY)
@@ -147,5 +182,4 @@ class Solution {
 
 ```
 
-### Ipoindi le ika lev
-Bagupadipondi.....Enjoyy Fandagawww
+### Bagupadipondi.....Enjoyy Fandagawww
