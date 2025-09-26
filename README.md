@@ -191,6 +191,70 @@ class Solution:
 ## WEEK 5: (Med)
 
 ```python
+from typing import List
+
+class Solution:
+    def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
+        res = []
+
+        def backtrack(i, path, rem):
+            if rem == 0:
+                res.append(path[:])
+                return
+            if rem < 0 or i >= len(candidates):
+                return
+            
+            for j in range(i, len(candidates)):
+                path.append(candidates[j])
+                backtrack(j, path, rem - candidates[j])
+                path.pop()
+
+        backtrack(0, [], target)
+        return res
+```
+## WEEK 5: (Easy)
+```python
+
+```
+## WEEK 5: (Med)
+
+```python
+
+```
+
+## WEEK 6: (Easy)
+
+```python
+
+```
+
+## WEEK 6: (Med)
+
+```python
+
+```
+
+## WEEK 7: (Easy)
+
+```python
+
+```
+
+## WEEK 7: (Med)
+
+```python
+
+```
+
+## WEEK 8: (Easy)
+
+```python
+
+```
+
+## WEEK 8: (Med)
+
+```python
 
 ```
 
