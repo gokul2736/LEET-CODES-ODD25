@@ -1,0 +1,42 @@
+## WEEK 1: (Easy)
+
+```python
+class Solution:
+    def generate(self, numRows):
+        triangle = [[1]]
+        for _ in range(numRows - 1):
+            triangle.append([x + y for x, y in zip([0] + triangle[-1], triangle[-1] + [0])])
+        return triangle
+```
+
+## WEEK 2: (Easy)
+
+```python
+class Solution:
+    def isHappy(self, n: int) -> bool:
+        seen=set()
+        while n!=1 and n not in seen:
+            seen.add(n)
+            n=sum(int(c)**2 for c in str(n))
+        return n==1
+```
+## WEEK 3: (Easy) 
+
+```
+from typing import List
+
+class Solution:
+    def fizzBuzz(self, n: int) -> List[str]:
+        answer = []
+        for i in range(1, n + 1):
+            if i % 15 == 0:
+                answer.append("FizzBuzz")
+            elif i % 3 == 0:
+                answer.append("Fizz")
+            elif i % 5 == 0:
+                answer.append("Buzz")
+            else:
+                answer.append(str(i))
+                
+        return answer
+```

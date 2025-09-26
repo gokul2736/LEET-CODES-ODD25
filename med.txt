@@ -1,19 +1,3 @@
-# LEET-CODES-ODD25 SOLS:
-
-*EASY & Med QUESTIONS*
-
-### 1st  two lines (Predefined Function) 
-
-## WEEK 1: (Easy)
-
-```python
-class Solution:
-    def generate(self, numRows):
-        triangle = [[1]]
-        for _ in range(numRows - 1):
-            triangle.append([x + y for x, y in zip([0] + triangle[-1], triangle[-1] + [0])])
-        return triangle
-```
 ## WEEK 1: (Med) 
 
 ```python
@@ -24,20 +8,6 @@ class Solution:
         return sum(nums) - min(nums) * len(nums)
 
 ```
-
-
-## WEEK 2: (Easy)
-
-```python
-class Solution:
-    def isHappy(self, n: int) -> bool:
-        seen=set()
-        while n!=1 and n not in seen:
-            seen.add(n)
-            n=sum(int(c)**2 for c in str(n))
-        return n==1
-```
-
 
 ## WEEK 2: (Med)
 
@@ -112,27 +82,6 @@ class Solution {
 }
 ```
 
-## WEEK 3: (Easy) 
-
-```python
-from typing import List
-
-class Solution:
-    def fizzBuzz(self, n: int) -> List[str]:
-        answer = []
-        for i in range(1, n + 1):
-            if i % 15 == 0:
-                answer.append("FizzBuzz")
-            elif i % 3 == 0:
-                answer.append("Fizz")
-            elif i % 5 == 0:
-                answer.append("Buzz")
-            else:
-                answer.append(str(i))
-                
-        return answer
-```
-
 ## WEEK 3: (Med) 
 
 ```python
@@ -158,38 +107,3 @@ class Solution:
             
         return result
 ```
-
-## WEEK 4: (EASY)
-
-```python
-class Solution:
-    def bitwiseComplement(self, n: int) -> int:
-        return 1 if n == 0 else n ^ ((1 << n.bit_length()) - 1)
-```
-
-## WEEK 4: (Med)
-
-```python
-from typing import List
-
-class Solution:
-    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
-        result = []
-        while matrix:
-            result += matrix.pop(0)
-            matrix = list(zip(*matrix))[::-1]
-        return result
-```
-## WEEK 5: (EASY)
-
-```python
-
-```
-
-## WEEK 5: (Med)
-
-```python
-
-```
-
-### Bagupadipondi.....Enjoyy Fandagawww
