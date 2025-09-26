@@ -72,8 +72,8 @@ class Solution:
         return res
 ```
 
-<h2 align="center">or in **java**</h2>
-or in **java**
+<h2 align="center">In java</h2>
+
 ```java
 import java.util.ArrayList;
 import java.util.Arrays;
