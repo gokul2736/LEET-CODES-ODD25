@@ -183,7 +183,9 @@ class Solution:
 ## WEEK 5: (EASY)
 
 ```python
-
+class Solution:
+    def countOdds(self, low: int, high: int) -> int:
+        return (high + 1) // 2 - low // 2
 ```
 
 ## WEEK 5: (Med)
